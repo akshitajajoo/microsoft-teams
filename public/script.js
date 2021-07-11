@@ -1,4 +1,4 @@
-const socket = io("ws://microsoft-engage-app.herokuapp.com:"+PORT+"/socket.io/?EIO=4&transport=websocket");
+const socket = io("ws://microsoft-engage-app.herokuapp.com/socket.io/?EIO=4&transport=websocket");
 const video_grid = document.getElementById("video-grid");
 let myVideoStream;
 const myVideo = document.createElement("video");
