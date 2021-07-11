@@ -8,7 +8,7 @@ const user = prompt("Enter name: ");
 var peer = new Peer(undefined, {
     path: "/peerjs",
     host: "/",
-    port: "80",
+    port: PORT,
 });
 
 
