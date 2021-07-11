@@ -34,6 +34,6 @@ io.on("connection", (socket) => {
     io.to(roomId).emit("createMessage", message, userName);
   })
 });
-server.listen(80);
+server.listen(process.env.PORT || 80);
 
 
