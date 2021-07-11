@@ -1,10 +1,11 @@
-const socket = io("/");
+const socket = io("ws://microsoft-engage-app.herokuapp.com:"+PORT+"/socket.io/?EIO=4&transport=websocket");
 const video_grid = document.getElementById("video-grid");
 let myVideoStream;
 const myVideo = document.createElement("video");
 myVideo.muted = true;
 
 const user = prompt("Enter name: ");
+console.log("print port "+PORT);
 var peer = new Peer(undefined, {
     path: "/peerjs",
     host: "/",
